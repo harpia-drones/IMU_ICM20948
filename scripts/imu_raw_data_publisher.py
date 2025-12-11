@@ -78,7 +78,7 @@ class ImuRawDataPublisher(Node):
             self.temperature_pub_.publish(temp_msg)
 
 
-    def parse_imu_msg(self, received_msg: str, acc_sens = 16384.0, gyro_sens = 131.0)
+    def parse_imu_msg(self, received_msg: str, acc_sens = 16384.0, gyro_sens = 131.0):
 
         pattern = r"Acc:\s*\[([^\]]+)\]*Gyr:\s*\[([^\]]+)\]*Tmp:\s*\[([^\]]+)\]"
         
