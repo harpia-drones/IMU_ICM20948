@@ -1,7 +1,7 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-def generate_launch_description()
+def generate_launch_description():
 
     # NODE: Publish raw IMU data (accel and gyro)
     raw_data_publisher_node = Node(
