@@ -8,7 +8,7 @@ def generate_launch_description():
         package='imu_bringup',
         executable='imu_raw_data_publisher.py',
         name='imu_raw_data_publisher',
-        output=screen
+        output='screen'
     )
 
     # Publish IMU data with orientation
@@ -20,7 +20,7 @@ def generate_launch_description():
             {'use_mag': False},
             {'use_sim_time': False}
         ],
-        output=screen
+        output='screen'
     )
 
     return LaunchDescription([
