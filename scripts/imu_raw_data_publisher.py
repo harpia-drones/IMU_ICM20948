@@ -19,7 +19,7 @@ class ImuRawDataPublisher(Node):
         super().__init__("imu_raw_data_publisher")
 
         # Publisher parameters
-        self.imu_pub_ = self.create_publisher(Imu, '/imu/raw_data', 10)
+        self.imu_pub_ = self.create_publisher(Imu, '/imu/data_raw', 10)
         self.temperature_pub_ = self.create_publisher(Temperature, '/imu/temperature', 10)
 
         # Timer parameters
