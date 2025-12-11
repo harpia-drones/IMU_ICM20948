@@ -30,7 +30,7 @@ install(PROGRAMS
 #     LAUNCH
 # ========================================
 
-install(PARENT_DIRECTORY
+install(DIRECTORY
   launch/
   DESTINATION share/${PROJECT_NAME}
 )
