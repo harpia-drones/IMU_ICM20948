@@ -2,7 +2,7 @@
 
 # ROS Core
 import rclpy
-from rclpy.node import node
+from rclpy.node import Node
 
 # Messages interface
 from sensor_msgs.msg import Imu
@@ -96,7 +96,7 @@ class ImuRawDataPublisher(Node):
 
         # ========= GYRO =========
         gyr_dps = [v / gyro_sens for v in gyro_raw]           # deg/s
-        gyr_rads = [v / * (math.pi / 180.0) for v in gyr_dps] # rad/s
+        gyr_rads = [v * (math.pi / 180.0) for v in gyr_dps] # rad/s
 
         # ========= TEMPERATURE =========
         temp_c = ((tmp_raw - 21.0) / 333.87) + 21.0
